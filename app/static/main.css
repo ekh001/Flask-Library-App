@@ -4,6 +4,328 @@
     box-sizing: inherit; 
   }
 
+  
 body {
-  padding-top: 50px;
+  background-color:floralwhite;
+  padding-top: 65px;
+}
+
+/* Navbar ------------------------*/
+nav {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  font-size: large;
+}
+
+.navbar-image {
+  height: 75px;
+  width: 75px;
+}
+
+.nav-link {
+  color: floralwhite;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color:rgb(14, 191, 240)
+}
+
+/* Links ------------------------*/
+a {
+  text-decoration: none;
+  color: floralwhite;
+}
+
+a:hover {
+  font-weight: bold;
+  color:rgb(14, 191, 240)
+}
+a:visited {
+  font-weight: bold;
+  color:plum
+}
+
+/* Buttons ------------------------*/
+.btn {
+  background-color: #720e9e;
+}
+
+/* Text specialization ------------------------*/
+h3 { 
+  font: italic normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px; 
+  margin-bottom: 0; 
+  color: #865ea6;
+  text-align: center;
+  padding: 10px;
+}
+
+p { 
+  margin-top: 5px; 
+  text-align: center;
+  font-size: large;
+}
+
+/* Not displayed on the landing page, but if I delete it, literally everything breaks in what can only be assumed is CSS voodoo, so it will remain */
+header h1 { 
+  margin-top: 10px;
+  display: block;
+  width: 219px;
+  height: 87px;
+  float: left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header h2 { 
+  margin-top: 58px; 
+  margin-bottom: 40px; 
+  width: 200px; 
+  height: 18px; 
+  float: right;    
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center
+}
+    
+header {
+  padding-top: 20px;
+  height: 87px;
+}
+
+/* Landing page header ------------------------*/
+#welcome {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  font-family: Gloock;
+  font-weight: bold;  
+  font-size: x-large;
+}
+
+/* Intro ------------------------*/
+.intro { 
+  min-width: 470px;
+  width: 100%; 
+}
+
+.tagline {
+  clear: both;
+  background-image: url(https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80); 
+  margin: 20px 20px 20px 10px; 
+  width: 400px; 
+  height: 400px;
+  border-radius: 50%;
+  float: left;
+  color:antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+.tagline p {
+  font: italic 1.9em/3.0 georgia;
+  font-weight: bold; 
+  text-shadow: 0 0 9px #070404;
+  display: flex;
+  height: 50vh;
+  text-align: center;
+  align-items: center;
+
+}
+    
+.preamble {
+  clear: right; 
+  padding: 0px 10px 0 10px;
+}
+
+.preamble h1 {
+  font: italic 3.0em georgia;
+  letter-spacing: 1px; 
+  margin-bottom: 0; 
+  color: #865ea6;
+  text-align: center;
+  padding: 10px;
+}
+
+/* How it Works ------------------------ */
+.more-info {
+  margin-top: 25px;
+  padding: 75px;
+  background-color: #6a11cb;
+  --mask:
+    radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 51% repeat-x,
+    radial-gradient(111.80px at 50% -100px,#0000 99%,#000 101%) 50% 50px/200px calc(51% - 50px) repeat-x,
+    radial-gradient(111.80px at 50% calc(100% - 150.00px),#000 99%,#0000 101%) calc(50% - 100px) 100%/200px 51% repeat-x,
+    radial-gradient(111.80px at 50% calc(100% + 100.00px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px calc(51% - 50px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  color: antiquewhite !important;
+}
+
+.more-info h3 {
+  color: antiquewhite;
+}
+
+/* Featured Author ------------------------*/
+.featured-author {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.featured-author h1 {
+  font: italic 2.0em georgia;
+  letter-spacing: 1px; 
+  margin-bottom: 0; 
+  color: #865ea6;
+  text-align: center;
+  padding-right: 50px;
+}
+
+/* Author Gallery ------------------------*/
+.author-gallery {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #6a11cb;
+  --mask:
+    radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 51% repeat-x,
+    radial-gradient(111.80px at 50% -100px,#0000 99%,#000 101%) 50% 50px/200px calc(51% - 50px) repeat-x,
+    radial-gradient(111.80px at 50% calc(100% - 150.00px),#000 99%,#0000 101%) calc(50% - 100px) 100%/200px 51% repeat-x,
+    radial-gradient(111.80px at 50% calc(100% + 100.00px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px calc(51% - 50px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.author {
+  padding: 5px;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+.author img {
+  max-width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .author {
+    width: 100%;
+    float: none; 
+  }
+}
+
+.gallery-header {
+  color: antiquewhite;
+}
+
+/* Shop Local/Banned ------------------------*/
+
+.tiktok-header {
+  text-align: left;
+  padding-left: 200px;
+}
+
+.shop {
+  padding: 30px;
+}
+
+#shop-links {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding-top: 25px;
+}
+
+#bookstore-locator {
+  margin-bottom: 30px;
+}
+
+
+.banned-books {
+  /* Why this doesn't work is going to haunt me for the rest of my days */
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.instagram-embed, .banned-books-website {
+  flex: 1;
+}
+
+.banned-books-website {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 75px;
+  padding: 35px;
+}
+
+
+
+/* Footer ------------------------*/
+.footer {
+  background: #6a11cb;
+  color: antiquewhite;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  margin-bottom: 0px;
+  justify-content: space-evenly;
+}
+  
+.footerimage {
+  width: 500px;
+  padding: 2%;
+  padding-left: 10px;
+}
+  
+.bottomimage {
+  width: 500px;
+  border-radius: 0%;
+}
+  
+.footinfo {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  font: 0.6em;
+}
+  
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  font: 0.6em;
+  color:antiquewhite;
+}
+  
+.socials {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  font: 0.6em;
+  color: antiquewhite;
+}
+  
+.foothead {
+  font-size: 2em;
+  text-align: center;
 }
